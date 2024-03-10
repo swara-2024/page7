@@ -1,0 +1,158 @@
+* {margin: 0; padding: 0;} 
+html, body { 
+    padding: 0; 
+    margin: 0; 
+    height: 100%;
+    background-image: url(./7.jpg);
+    background-size: cover;
+}
+input, textarea {font-size: 24px;}
+
+.page {font-size: 24px;}
+.page:not([current]) {display: none !important;}
+.page.center {height: 100%; display: grid; }
+.page.center  .content {margin: auto; position: relative;}
+.page.absolute {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+.page.absolute .content {margin: auto; position: absolute; top: 48px; right: 0; left: 0; bottom: 0; overflow: auto;}
+
+.page .top {
+    position: absolute; 
+    top: 40px; 
+    text-align: center; 
+    left: 0; 
+    right: 0;
+    font-size: 4rem;
+}    
+.back-button {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    padding: 10px; 
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 4px 0px 0px #e184f3;
+  background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+  background-color:#c123de;
+  border-radius:5px;
+  border:1px solid #a511c0;
+    font-size:17px;
+  font-weight:bold;
+  padding:12px 44px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #9b14b3;
+  }
+  
+  .back-button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 2px;
+  }
+  
+  .back-button a:hover{
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  background-color:#a20dbd;
+  }
+#page-selector .content .group {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    cursor: pointer; 
+    text-align: center;
+    margin-bottom: 80%;
+    border: 5px solid rgb(228, 63, 192);
+    margin-top: 6rem;
+}
+#page-card #option [ref] {display: inline-block; background: #eee; cursor: pointer; padding: 10px;}
+#page-card #option [ref]:not([pushed]) {opacity: 0.3;}
+#page-card #image {width: 200px; height: 200px; background-size: cover;}
+#page-card #word {text-align: center; font-size: 48px;}
+#page-card #translate {text-align: center; color: #bbb;}
+#page-card #answer {text-align: center; color: red;}
+
+
+#page-card #button {width: 100px; height: 100px; border-radius: 50%; background: cornflowerblue; color: white; position: absolute; bottom: 20px; left: 50%; margin-left: -50px;}
+#page-card #button[hold] {opacity: 0.5;}
+
+
+    
+  .next-button {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 4px 0px 0px #54a3f7;
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color:#007dc1;
+  border-radius:5px;
+  border:1px solid #124d77;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:12px 44px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #154682;
+  }
+  
+  .back-button:hover{
+    background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+  background-color:#a20dbd;
+  }
+    
+  .next-button {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 4px 0px 0px #54a3f7;
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color:#007dc1;
+  border-radius:5px;
+  border:1px solid #124d77;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:12px 44px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #154682;
+  }
+  
+  .next-button a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .next-button:hover{
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color:#0061a7;
+  }
+
+  /* Added CSS for girl image container */
+.girl-image-container {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+.girl-image-container img {
+    width: 600px; /* Adjust size as needed */
+    height: auto;
+}
